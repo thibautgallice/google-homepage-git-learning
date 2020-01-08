@@ -1,0 +1,221 @@
+/*global*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin:0px;
+}
+
+ /*----- set sticky footer*/
+#structure {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+section {
+  flex: 1 0 auto;
+  min-width: 980px;
+}
+
+/*custom link style*/
+/*----- navbar*/
+nav a{
+  color:rgba(0,0,0,0.87);
+}
+nav a, footer a {
+  text-decoration: none;
+}
+nav a:hover, footer a:hover {
+  text-decoration: underline;
+}
+
+nav .img-apps {
+  opacity: .55;
+}
+nav .img-apps:hover {
+  opacity: 1;
+}
+
+/*----- footer*/
+footer a{
+  color:rgba(0,0,0,.54);
+}
+
+
+/*nav bar*/
+
+nav ul {
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  align-items: center;
+  margin-top: 12px;;
+}
+
+nav ul li {
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+nav ul li:nth-last-child(1) {
+padding-right: 27px;
+}
+
+/*section (main content)*/
+.main-content {
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*----- logo Google*/
+.logo-google {
+  max-width: 272px;
+  margin-bottom: 30px;
+  padding: 109px 0px 0px 0px;
+}
+
+.logo-google img {
+  width:100%;
+}
+
+/*----- search field*/
+#searchtext{
+  width: 394px;
+  -moz-border-radius:24px;
+  -webkit-border-radius:24px;
+  border-radius:24px;
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  background-color: #fff;
+  padding-left: 45px;
+  padding-right: 45px;
+
+}
+
+.search-bar input:focus,
+.search-bar select:focus,
+.search-bar textarea:focus,
+.search-bar button:focus {
+  outline: none;
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+.search-bar input:hover {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+.field {
+  position: relative;
+}
+
+.field .loupe img {
+  position: absolute;
+  left:13px;
+  top:10px;
+}
+
+.field .micro img {
+  position: absolute;
+  right:13px;
+  top:12px;
+  width: 24px;
+  height: 24px;
+}
+
+/*----- search buttons*/
+.search-btn {
+  margin: 18px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.search-btn button {
+  padding:0px 16px;
+  height: 36px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-color:#f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #5F6368;
+  margin: 11px 4px 11px 4px;
+  font-size: 14px;
+}
+
+.search-btn button:hover{
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-color: #f2f2f2;
+  border: 1px solid rgb(192, 197, 204);
+  border-radius: 4px;
+  color: #5F6368;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 1px 2px 0 rgba(32,33,36,0.28);
+}
+
+/*footer*/
+footer {
+  background-color: #f2f2f2;
+  min-width: 980px;
+}
+
+footer .top-footer, .bottom-nav {
+  border-top: 1px solid #e4e4e4;
+  color:rgba(0,0,0,.54);
+}
+
+footer .top-footer{
+  line-height: 40px;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+footer .bottom-nav {
+  display:flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+}
+
+footer .bottom-nav ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+footer .left-bottom-nav, footer .right-bottom-nav {
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 13px;
+}
+
+footer .left-bottom-nav li, footer .right-bottom-nav li {
+  padding-left: 27px;
+}
+
+footer .right-bottom-nav:nth-last-child(1) {
+  padding-right: 30px;
+}
